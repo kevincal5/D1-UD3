@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>MiniQuizz Etapa 2</title>
+</head>
+
+<body>
+	<h2>Etapa 2: Signo</h2>
+	<form action="/cookies" method="post">
+		<input type="hidden" name="numEtapa" value="2">
+
+		<label for="signo">Selecciona tu signo:</label>
+		<select name="signo" id="signo">
+			<option value="0">-- Elige un signo --</option>
+			<option value="1">Aries</option>
+			<option value="2">Tauro</option>
+			<option value="3">Géminis</option>
+			<option value="4">Cáncer</option>
+			<option value="5">Leo</option>
+			<option value="6">Virgo</option>
+			<option value="7">Libra</option>
+			<option value="8">Escorpio</option>
+			<option value="9">Sagitario</option>
+			<option value="10">Capricornio</option>
+			<option value="11">Acuario</option>
+			<option value="12">Piscis</option>
+		</select>
+
+		<br><br>
+		<input type="submit" value="Siguiente">
+	</form>
+</body>
+
+</html>

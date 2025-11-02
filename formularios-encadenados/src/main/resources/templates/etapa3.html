@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>MiniQuizz Etapa 3</title>
+</head>
+
+<body>
+	<h2>Etapa 3: Aficciones</h2>
+	<p th:text="${errores}" s></p>
+
+	<form method="post" th:action="${action}">
+		<div th:each="a : ${aficciones}">
+			<input type="checkbox" name="aficciones" th:value="${a}"
+				th:checked="${aficcionesSeleccionadas != null and aficcionesSeleccionadas.contains(a)}" />
+			<span th:text="${a}"></span><br />
+		</div>
+		<input type="hidden" name="numEtapa" th:value="${numEtapa}" />
+		<input type="submit" value="Siguiente" />
+	</form>
+</body>
+
+</html>

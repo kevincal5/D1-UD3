@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>MiniQuizz Resultado</title>
+</head>
+
+<body>
+	<h2>Resultado</h2>
+
+	<ol>
+		<li th:each="r : ${respuestas}" th:text="${r}"></li>
+	</ol>
+
+	<a th:href="@{/cookies}">Volver a Cookies</a> |
+	<a th:href="@{/session}">Volver a Sesión</a>
+
+</body>
+
+</html>
